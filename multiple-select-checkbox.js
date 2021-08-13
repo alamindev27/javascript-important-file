@@ -1,3 +1,3 @@
-  $('#title').keyup(function(){
-    $('#sluge').val($(this).val().toLowerCase().split(',').join('').replace(/\s/g,"-"));
-  });
+$("#checkAll").click(function(){
+  $('input:checkbox').not(this).prop('checked', this.checked);
+});
